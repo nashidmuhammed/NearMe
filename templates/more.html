@@ -1,0 +1,19 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+  <head>
+    <title>MORE images</title>
+    <meta charset="utf-8">
+
+  </head>
+<body>
+{% if s %}
+  {% for i in s %}
+    <img src="{{i.cover_img.url}}" style="width:500px">
+    <img src="{{i.img_1.url}}" style="width:500px">
+    <img src="{{i.img_2.url}}" style="width:500px">
+    <img src="{{i.img_3.url}}" style="width:500px">
+  {% endfor %}
+{% endif %}
+</body>
